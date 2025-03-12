@@ -35,8 +35,19 @@ function AppContent() {
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/competences/Angular" element={<Angular />} />
           <Route path="/competences/C" element={<C />} />
+          <Route path="/competences/UnitTest" element={<UnitTest />} />
+          <Route path="/competences/Java" element={<Java />} />
+          <Route path="/competences/SQL" element={<SQL />} />
+          <Route path="/competences/XML" element={<XML />} />
+          <Route path="/competences/Communication" element={<Communication />} />
+          <Route path="/competences/Adaptabilite" element={<Adaptabilite />} />
+          <Route path="/competences/Agile" element={<Agile />} />
+          <Route path="/competences/Autonomie" element={<Autonomie />} />
           <Route path="/realisations/Erec" element={<Erec />} />
           <Route path="/realisations/RezDrive" element={<RezDrive />} />
+          <Route path="/realisations/LocaDax" element={<LocaDax />} />
+          <Route path="/realisations/Ebrush" element={<Ebrush />} />
+          <Route path="/realisations/FormCollect" element={<FormCollect />} />
           <Route path="/contact" element={<div>Contact Page</div>} />
         </Routes>
       </div>

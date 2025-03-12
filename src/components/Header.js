@@ -6,20 +6,18 @@ function Header() {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [openSubDropdown, setOpenSubDropdown] = useState(null);
 
-  // Fonction pour gérer l'affichage des dropdowns
   const toggleDropdown = (menu) => {
-    if (openDropdown === menu) {
-      setOpenDropdown(null);
-      setOpenSubDropdown(null); // Ferme aussi les sous-menus
-    } else {
-      setOpenDropdown(menu);
-      setOpenSubDropdown(null); // Réinitialise les sous-menus
-    }
+    setOpenDropdown(openDropdown === menu ? null : menu);
+    setOpenSubDropdown(null); 
   };
 
-  // Gestion des sous-menus
   const toggleSubDropdown = (submenu) => {
     setOpenSubDropdown(openSubDropdown === submenu ? null : submenu);
+  };
+
+  const closeDropdown = () => {
+    setOpenDropdown(null);
+    setOpenSubDropdown(null);
   };
 
   return (
@@ -34,54 +32,42 @@ function Header() {
 
         {/* Dropdown Compétences */}
         <div className="nav-item dropdown">
-          <a
-            href="#"
-            className="dropdown-toggle nav-link"
-            onClick={() => toggleDropdown("competences")}
-          >
+          <button className="dropdown-toggle nav-link" onClick={() => toggleDropdown("competences")}>
             Compétences ▾
-          </a>
+          </button>
           {openDropdown === "competences" && (
             <div className="dropdown-menu">
-              <Link to="/skills" className="dropdown-item">Toutes les compétences</Link>
+              <Link to="/skills" className="dropdown-item" onClick={closeDropdown}>Toutes les compétences</Link>
               <hr className="dropdown-divider" />
 
               {/* Sous-menu Techniques */}
               <div className="nav-item dropdown">
-                <a
-                  href="#"
-                  className="dropdown-toggle nav-link"
-                  onClick={() => toggleSubDropdown("techniques")}
-                >
+                <button className="dropdown-toggle sub-dropdown" onClick={() => toggleSubDropdown("techniques")}>
                   Techniques ▾
-                </a>
+                </button>
                 {openSubDropdown === "techniques" && (
-                  <div className="dropdown-menu">
-                    <Link to="/competences/Angular" className="dropdown-item">Angular</Link>
-                    <Link to="/competences/C#" className="dropdown-item">C#</Link>
-                    <Link to="/competences/UnitTest" className="dropdown-item">UnitTest</Link>
-                    <Link to="/competences/Java" className="dropdown-item">Java</Link>
-                    <Link to="/competences/SQL" className="dropdown-item">SQL</Link>
-                    <Link to="/competences/XML" className="dropdown-item">XML</Link>
+                  <div className="dropdown-submenu">
+                    <Link to="/competences/Angular" className="dropdown-item" onClick={closeDropdown}>Angular</Link>
+                    <Link to="/competences/C#" className="dropdown-item" onClick={closeDropdown}>C#</Link>
+                    <Link to="/competences/UnitTest" className="dropdown-item" onClick={closeDropdown}>UnitTest</Link>
+                    <Link to="/competences/Java" className="dropdown-item" onClick={closeDropdown}>Java</Link>
+                    <Link to="/competences/SQL" className="dropdown-item" onClick={closeDropdown}>SQL</Link>
+                    <Link to="/competences/XML" className="dropdown-item" onClick={closeDropdown}>XML</Link>
                   </div>
                 )}
               </div>
 
               {/* Sous-menu Humaines */}
               <div className="nav-item dropdown">
-                <a
-                  href="#"
-                  className="dropdown-toggle nav-link"
-                  onClick={() => toggleSubDropdown("humaines")}
-                >
+                <button className="dropdown-toggle sub-dropdown" onClick={() => toggleSubDropdown("humaines")}>
                   Humaines ▾
-                </a>
+                </button>
                 {openSubDropdown === "humaines" && (
-                  <div className="dropdown-menu">
-                    <Link to="/competences/Communication" className="dropdown-item">Communication</Link>
-                    <Link to="/competences/Adaptabilite" className="dropdown-item">Adaptabilite</Link>
-                    <Link to="/competences/Agile" className="dropdown-item">Agile</Link>
-                    <Link to="/competences/Autonomie" className="dropdown-item">Autonomie</Link>
+                  <div className="dropdown-submenu">
+                    <Link to="/competences/Communication" className="dropdown-item" onClick={closeDropdown}>Communication</Link>
+                    <Link to="/competences/Adaptabilite" className="dropdown-item" onClick={closeDropdown}>Adaptabilité</Link>
+                    <Link to="/competences/Agile" className="dropdown-item" onClick={closeDropdown}>Agile</Link>
+                    <Link to="/competences/Autonomie" className="dropdown-item" onClick={closeDropdown}>Autonomie</Link>
                   </div>
                 )}
               </div>
@@ -91,25 +77,20 @@ function Header() {
 
         {/* Dropdown Réalisations */}
         <div className="nav-item dropdown">
-          <a
-            href="#"
-            className="dropdown-toggle nav-link"
-            onClick={() => toggleDropdown("realisations")}
-          >
+          <button className="dropdown-toggle nav-link" onClick={() => toggleDropdown("realisations")}>
             Réalisations ▾
-          </a>
+          </button>
           {openDropdown === "realisations" && (
             <div className="dropdown-menu">
-              <Link to="/realisations/Erec" className="dropdown-item">Erec</Link>
-              <Link to="/realisations/RezDrive" className="dropdown-item">RezDrive</Link>
-              <Link to="/realisations/LocaDax" className="dropdown-item">LocaDax</Link>
-              <Link to="/realisations/Ebrush" className="dropdown-item">Ebrush</Link>
-              <Link to="/realisations/FormCollect" className="dropdown-item">FormCollect</Link>
+              <Link to="/realisations/Erec" className="dropdown-item" onClick={closeDropdown}>Erec</Link>
+              <Link to="/realisations/RezDrive" className="dropdown-item" onClick={closeDropdown}>RezDrive</Link>
+              <Link to="/realisations/LocaDax" className="dropdown-item" onClick={closeDropdown}>LocaDax</Link>
+              <Link to="/realisations/Ebrush" className="dropdown-item" onClick={closeDropdown}>Ebrush</Link>
+              <Link to="/realisations/FormCollect" className="dropdown-item" onClick={closeDropdown}>FormCollect</Link>
             </div>
           )}
         </div>
 
-        {/* Contact */}
         <Link to="/contact" className="nav-link">Contact</Link>
       </nav>
     </header>

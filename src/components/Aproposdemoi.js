@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-function Communication() {
+function Aproposdemoi() {
   return (
     <div>
-      <h1>Communication</h1>
+      <h1>A propos de moi</h1>
       <h3 class="subtitle">Introduction</h3>
       <p></p>
       <p></p>
@@ -25,4 +25,4 @@ function Communication() {
 );
 }
 
-export default Communication
+export default Aproposdemoi

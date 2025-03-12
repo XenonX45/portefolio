@@ -1,8 +1,8 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 function Angular() {
   return (
-    <div>
+    <div className='container_components'>
       <h1>Angular</h1>
       <h3 class="subtitle">Introduction</h3>
       <p>Angular est un framework (outil pour les développeurs) open-source qui est apparu en septembre 2016 développé et maintenu par Google. Il est utilisé pour développer des applications web dynamique, interactives et performantes en particulier des SPA (Single Page Applications). Angular utilise Typescript qui est un langage typé basé sur Javascript. Typescript permet de nombreuses choses comme des types statiques, des interfaces, et des classes avancées ce qui rendent le code plus robuste et plus facile à maintenir. Angular est caractérisé par de nombreuse fonctionnalité comme les composants, les directives, les templates, les routes, les modules et bien plus encore.</p>
@@ -22,7 +22,10 @@ function Angular() {
       <p>Pour atteindre cet objectif, je vais suivre la formation compléte nommer «Advanced Angular » sur le site de formation pluralsight. Grâce à cette formation j’espère atteindre un niveau d’expertice avancé en Angular pour réaliser des applications front-end les plus complexe, performante et optimiser. Je prévois également de contribuer à des projets open-source Angular pour renforcer et appliquer les conseils ainsi que les connaissances que ma formation pluralsight m’aura apporté.</p>
       <br></br>
       <h3>Réalisations associées</h3>
-      <div className='realised_button'></div>
+      <div className="realised_container">
+        <Link to="/realisations/RezDrive" className="realised_button">RezDrive</Link>
+        <Link to="/realisations/Erec" className="realised_button">eRec</Link>
+      </div>
     </div>
   );
 }

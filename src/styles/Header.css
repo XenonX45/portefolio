@@ -1,4 +1,4 @@
-/* Style global */
+/* Réinitialisation */
 body, html {
   margin: 0;
   padding: 0;
@@ -48,10 +48,13 @@ body, html {
 /* Liens */
 .nav-link {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: black;
   padding: 10px 12px;
   font-size: 16px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .nav-link:hover {
@@ -73,17 +76,11 @@ body, html {
   min-width: 180px;
   border-radius: 8px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
   display: none;
 }
 
-/* Affichage du menu dropdown */
 .dropdown .dropdown-menu {
   display: block;
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* Contenu du dropdown */
@@ -98,4 +95,30 @@ body, html {
 
 .dropdown-item:hover {
   background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Sous-menus */
+.sub-dropdown {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.dropdown-submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: white;
+  min-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.dropdown-menu .nav-item:hover > .dropdown-submenu {
+  display: block;
 }
