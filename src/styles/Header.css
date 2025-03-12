@@ -1,0 +1,133 @@
+/* Style global */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Conteneur du titre et description */
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.title {
+  color: rgb(71, 147, 209);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Navigation */
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Liens */
+.nav-link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 12px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+/* Menu déroulant */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: none;
+}
+
+/* Affichage du menu dropdown au clic */
+.dropdown:hover .dropdown-menu,
+.dropdown .dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Contenu du dropdown */
+.dropdown-item {
+  display: block;
+  padding: 12px 15px;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Séparateur */
+.dropdown-divider {
+  margin: 5px 0;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    transform: none;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
