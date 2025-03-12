@@ -7,7 +7,6 @@ const realisations = [
   {
     id: 1,
     name: "eRec",
-    image: "/images/optimap.png",
     description: "Optimap est un outil interne de gestion client permettant d'optimiser et de faciliter les processus de prospection employés par les commerciaux et les assistantes commerciales au sein de l'entreprise EUPHORIA.",
     technologies: ["Angular", "C#", "SQL", "UNIT Test", "XML"],
     skills: ["Agile", "Communication", "Autonomie", "Adaptabilité"],
@@ -16,7 +15,6 @@ const realisations = [
   {
     id: 2,
     name: "RezDrive",
-    image: "/images/altara.png",
     description: "Altara est un serveur de jeu pour GTA V dont le style de jeu est axé sur le jeu de rôles...",
     technologies: ["Java", "Angular", "UNIT Test", "SQL"],
     skills: ["Agile", "Communication"],
@@ -25,7 +23,6 @@ const realisations = [
   {
     id: 3,
     name: "FormCollect",
-    image: "/images/apps47.png",
     description: "Apps47 est un ensemble de deux applications Android pour le Conseil départemental du Lot-et-Garonne...",
     technologies: ["Java", "XML"],
     skills: ["Agile", "Communication"],
@@ -34,7 +31,6 @@ const realisations = [
   {
     id: 4,
     name: "LocaDax",
-    image: "/images/apps47.png",
     description: "Apps47 est un ensemble de deux applications Android pour le Conseil départemental du Lot-et-Garonne...",
     technologies: ["C#", "SQL"],
     skills: ["Agile", "Communication"],
@@ -43,7 +39,6 @@ const realisations = [
   {
     id: 5,
     name: "Ebrush",
-    image: "/images/apps47.png",
     description: "Apps47 est un ensemble de deux applications Android pour le Conseil départemental du Lot-et-Garonne...",
     technologies: ["Javascript"],
     skills: ["Agile", "Communication", "Autonomie", "Adaptabilité"],
@@ -58,7 +53,6 @@ const AllRealisations = () => {
         <div key={realisation.id} className="realisation-card">
           {/* Card Body */}
           <div className="card-body">
-            <img src={realisation.image} alt={realisation.name} className="realisation-logo" />
             <h2>{realisation.name}</h2>
             <p className="realisation-description">{realisation.description}</p>
 

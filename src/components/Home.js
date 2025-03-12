@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import '../styles/Home.css';
-
+import Timeline from "./Timeline";
 function Home() {
   return (
     <div className="home">
@@ -11,6 +11,7 @@ function Home() {
         <h4>Développeur Full Stack</h4>
         <Link to="/presentation/Aproposdemoi" className="Apropos">A propos de moi</Link>
       </div>
+      <Timeline />
     </div>
   );
 }

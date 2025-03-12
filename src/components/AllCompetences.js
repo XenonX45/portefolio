@@ -7,7 +7,6 @@ const competences = [
   {
     id: 1,
     name: "C#",
-    image: "/images/react.png",
     rating: 4,
     level: "Confirmé",
     realisations: ["eRec", "LocaDax"],
@@ -16,7 +15,6 @@ const competences = [
   {
     id: 2,
     name: "Java",
-    image: "/images/nodejs.png",
     rating: 3,
     level: "Autonome",
     realisations: ["RezDrive", "FormCollect"],
@@ -25,7 +23,6 @@ const competences = [
   {
     id: 3,
     name: "Angular",
-    image: "/images/mongodb.png",
     rating: 5,
     level: "Expert",
     realisations: ["RezDrive","eRec"],
@@ -34,7 +31,6 @@ const competences = [
   {
     id: 4,
     name: "SQL",
-    image: "/images/android.png",
     rating: 4,
     level: "Confirmé",
     realisations: ["RezDrive","eRec","LocaDax"],
@@ -43,7 +39,6 @@ const competences = [
   {
     id: 5,
     name: "UNIT Test",
-    image: "/images/angular.png",
     rating: 3,
     level: "Autonome",
     realisations: ["RezDrive","eRec"],
@@ -52,7 +47,6 @@ const competences = [
   {
     id: 6,
     name: "XML",
-    image: "/images/csharp.png",
     rating: 2,
     level: "Initié",
     realisations: ["FormCollect","eRec"],
@@ -61,7 +55,6 @@ const competences = [
   {
     id: 7,
     name: "Autonomie",
-    image: "/images/csharp.png",
     rating: 3,
     level: "Autonome",
     realisations: ["Ebrush","eRec"],
@@ -70,7 +63,6 @@ const competences = [
   {
     id: 8,
     name: "Agile",
-    image: "/images/csharp.png",
     rating: 4,
     level: "Confirmé",
     realisations: ["Ebrush","eRec","RezDrive", "FormCollect","LocaDax"],
@@ -79,7 +71,6 @@ const competences = [
   {
     id: 9,
     name: "Communication",
-    image: "/images/csharp.png",
     rating: 3,
     level: "Autonome",
     realisations: ["Ebrush","eRec","RezDrive", "FormCollect","LocaDax"],
@@ -88,7 +79,6 @@ const competences = [
   {
     id: 10,
     name: "Adaptabilité",
-    image: "/images/csharp.png",
     rating: 3,
     level: "Autonome",
     realisations: ["Ebrush","eRec"],
@@ -103,7 +93,6 @@ const AllCompetences = () => {
         <div key={competence.id} className="competence-card">
           {/* Card Body */}
           <div className="card-body">
-            <img src={competence.image} alt={competence.name} className="competence-logo" />
             <h2>{competence.name}</h2>
 
             {/* Étoiles */}
