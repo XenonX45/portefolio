@@ -53,7 +53,7 @@ const competences = [
     id: 6,
     name: "XML",
     image: "/images/csharp.png",
-    rating: 4,
+    rating: 2,
     level: "Initié",
     realisations: ["FormCollect","eRec"],
     tag: "#technique"
@@ -62,36 +62,36 @@ const competences = [
     id: 7,
     name: "Autonomie",
     image: "/images/csharp.png",
-    rating: 4,
-    level: "Confirmé",
-    realisations: ["EnterpriseApp"],
+    rating: 3,
+    level: "Autonome",
+    realisations: ["Ebrush","eRec"],
     tag: "#humaine"
   },
   {
     id: 8,
-    name: "C#",
+    name: "Agile",
     image: "/images/csharp.png",
     rating: 4,
     level: "Confirmé",
-    realisations: ["EnterpriseApp"],
+    realisations: ["Ebrush","eRec","RezDrive", "FormCollect","LocaDax"],
     tag: "#humaine"
   },
   {
     id: 9,
-    name: "C#",
+    name: "Communication",
     image: "/images/csharp.png",
-    rating: 4,
-    level: "Confirmé",
-    realisations: ["EnterpriseApp"],
+    rating: 3,
+    level: "Autonome",
+    realisations: ["Ebrush","eRec","RezDrive", "FormCollect","LocaDax"],
     tag: "#humaine"
   },
   {
     id: 10,
-    name: "C#",
+    name: "Adaptabilité",
     image: "/images/csharp.png",
-    rating: 4,
-    level: "Confirmé",
-    realisations: ["EnterpriseApp"],
+    rating: 3,
+    level: "Autonome",
+    realisations: ["Ebrush","eRec"],
     tag: "#humaine"
   }
 ];
