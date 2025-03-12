@@ -8,6 +8,17 @@ import Angular from "./components/Angular";
 import C from "./components/C";
 import RezDrive from "./components/RezDrive";
 import Erec from "./components/eRec";
+import Adaptabilite from "./components/Adaptabilite";
+import Agile from "./components/Agile";
+import Autonomie from "./components/Autonomie";
+import Communication from "./components/Communication";
+import Ebrush from "./components/Ebrush";
+import FormCollect from "./components/FormCollect";
+import Java from "./components/Java";
+import LocaDax from "./components/LocaDax";
+import SQL from "./components/SQL";
+import UnitTest from "./components/UnitTest";
+import XML from "./components/XML";
 import "./App.css";
 
 function AppContent() {
