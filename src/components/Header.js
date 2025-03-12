@@ -37,7 +37,7 @@ function Header() {
           </button>
           {openDropdown === "competences" && (
             <div className="dropdown-menu">
-              <Link to="/skills" className="dropdown-item" onClick={closeDropdown}>Toutes les compétences</Link>
+              <Link to="/competences" className="dropdown-item" onClick={closeDropdown}>Toutes les compétences</Link>
               <hr className="dropdown-divider" />
 
               {/* Sous-menu Techniques */}
@@ -82,6 +82,8 @@ function Header() {
           </button>
           {openDropdown === "realisations" && (
             <div className="dropdown-menu">
+              <Link to="/realisations" className="dropdown-item" onClick={closeDropdown}>Toutes les réalisations</Link>
+              <hr className="dropdown-divider" />
               <Link to="/realisations/Erec" className="dropdown-item" onClick={closeDropdown}>Erec</Link>
               <Link to="/realisations/RezDrive" className="dropdown-item" onClick={closeDropdown}>RezDrive</Link>
               <Link to="/realisations/LocaDax" className="dropdown-item" onClick={closeDropdown}>LocaDax</Link>

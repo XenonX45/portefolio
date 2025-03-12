@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function C() {
   return (
     <div>
-      <h1>C</h1>
+      <h1>C#</h1>
       <h3 class="subtitle">Introduction</h3>
       <p></p>
       <p></p>

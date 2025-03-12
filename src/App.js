@@ -2,8 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import Competences from "./components/Competences";
-import Realisations from "./components/Realisations";
 import Angular from "./components/Angular";
 import C from "./components/C";
 import RezDrive from "./components/RezDrive";
@@ -19,6 +17,9 @@ import LocaDax from "./components/LocaDax";
 import SQL from "./components/SQL";
 import UnitTest from "./components/UnitTest";
 import XML from "./components/XML";
+import Aproposdemoi from "./components/Aproposdemoi";
+import AllCompetences from "./components/AllCompetences";
+import Allrealisation from "./components/Allrealisation";
 import "./App.css";
 
 function AppContent() {
@@ -31,8 +32,6 @@ function AppContent() {
       <div className={isHome ? "" : "container"}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/competences" element={<Competences />} />
-          <Route path="/realisations" element={<Realisations />} />
           <Route path="/competences/Angular" element={<Angular />} />
           <Route path="/competences/C" element={<C />} />
           <Route path="/competences/UnitTest" element={<UnitTest />} />
@@ -48,6 +47,9 @@ function AppContent() {
           <Route path="/realisations/LocaDax" element={<LocaDax />} />
           <Route path="/realisations/Ebrush" element={<Ebrush />} />
           <Route path="/realisations/FormCollect" element={<FormCollect />} />
+          <Route path="/presentation/Aproposdemoi" element={<Aproposdemoi />} />
+          <Route path="/competences" element={<AllCompetences />} />
+          <Route path="/realisations" element={<Allrealisation />} />
           <Route path="/contact" element={<div>Contact Page</div>} />
         </Routes>
       </div>

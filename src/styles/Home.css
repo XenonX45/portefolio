@@ -27,3 +27,16 @@
 .desc{
   color: rgb(24, 24, 24);
 }
+
+h2{
+  font-size: calc(2rem + .6vw);
+}
+
+h4{
+  font-size: calc(1.5rem + .6vw);
+}
+
+.Apropos{
+  font-size: calc(1.2rem + .6vw);
+  color: white;
+}

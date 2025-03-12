@@ -1,0 +1,120 @@
+/* Conteneur principal - affichage en grille avec 3 cartes par ligne */
+.competences-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Minimum 300px par carte */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1200px; /* Ajuste la largeur max pour centrer */
+    margin: auto;
+  }
+  
+  /* Carte des compétences */
+  .competence-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Effet de survol */
+  .competence-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Card Body */
+  .card-body {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  /* Logo de la compétence */
+  .competence-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Niveau de compétence */
+  .competence-level {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* Étoiles de notation */
+  .rating {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .star {
+    font-size: 20px;
+    color: lightgray;
+  }
+  
+  .star.filled {
+    color: orange;
+  }
+  
+  /* Boutons réalisations */
+  .realised-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .realised-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .realised-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Card Footer */
+  .card-footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  /* Tag technique */
+  .competence-tag {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  /* Responsive - 2 cartes par ligne sur tablettes */
+  @media (max-width: 900px) {
+    .competences-container {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* S'ajuste en fonction de l'écran */
+    }
+  }
+  
+  /* Responsive - 1 carte par ligne sur mobile */
+  @media (max-width: 600px) {
+    .competences-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
