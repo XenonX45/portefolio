@@ -53,7 +53,12 @@ function LocaDax() {
       <p>Cela était normal puisque j’étais en train de développer mes compétences en même temps que de développer le projet. Je pense tout de même que cela m’aurait permis de développer plus rapidement certaines fonctionnalités en résolvant plus rapidement certaines erreurs rencontrées durant la phase de développement.</p>
       <br></br>
       <h3>Compétences associées</h3>
-      <div className='realised_button'></div>
+      <div className="realised_container">
+        <Link to="/competences/C" className="realised_button">C#</Link>
+        <Link to="/competences/SQL" className="realised_button">SQL</Link>
+        <Link to="/competences/Communication" className="realised_button">Communication</Link>
+        <Link to="/competences/Agile" className="realised_button">Agile</Link>
+      </div>
     </div>
 );
 }

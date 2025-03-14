@@ -24,7 +24,11 @@ function Communication() {
       <br></br>
       <h3>Réalisations associées</h3>
       <div className="realised_container">
-        <Link to="/realisations/WebFTI" className="realised_button">WebFTI</Link>
+        <Link to="/realisations/Ebrush" className="realised_button">Ebrush</Link>
+        <Link to="/realisations/eRec" className="realised_button">eRec</Link>
+        <Link to="/realisations/FormCollect" className="realised_button">FormCollect</Link>
+        <Link to="/realisations/LocaDax" className="realised_button">LocaDax</Link>
+        <Link to="/realisations/RezDrive" className="realised_button">RezDrive</Link>
       </div>
     </div>
 );

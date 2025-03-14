@@ -44,7 +44,14 @@ function RezDrive() {
       <p>Néanmoins, il est dommage que la commanditaire n’ait pas pu mettre en place l’hébergement de l’application web, qui aurait été une réelle plus-value pour l’organisation de son entreprise.</p>
       <br></br>
       <h3>Compétences associées</h3>
-      <div className='realised_button'></div>
+      <div className="realised_container">
+        <Link to="/competences/Java" className="realised_button">Java</Link>
+        <Link to="/competences/Angular" className="realised_button">Angular</Link>
+        <Link to="/competences/UnitTest" className="realised_button">UnitTest</Link>
+        <Link to="/competences/SQL" className="realised_button">SQL</Link>
+        <Link to="/competences/Communication" className="realised_button">Communication</Link>
+        <Link to="/competences/Agile" className="realised_button">Agile</Link>
+      </div>
     </div>
 );
 }

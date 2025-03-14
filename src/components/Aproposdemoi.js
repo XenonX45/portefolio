@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Aproposdemoi() {
   return (
     <div className="container_components">
-      <h1>Rez Drive</h1>
+      <h1>Présentation générale</h1>
       <h3 className="subtitle">Présentation</h3>
       <p>Actuellement étudiant et alternant chez Capgemini Engineering en tant que développeur full stack, j’aime développer des projets modernes et utiles pour un avenir meilleur qui me permettent de me dépasser au quotidien pour acquérir de nouvelles compétences. Mon objectif est de toujours m’améliorer dans tous les aspects de ma vie.</p>
       <br></br>

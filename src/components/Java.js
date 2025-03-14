@@ -26,6 +26,7 @@ function Java() {
       <h3>Réalisations associées</h3>
       <div className="realised_container">
         <Link to="/realisations/RezDrive" className="realised_button">RezDrive</Link>
+        <Link to="/realisations/FormCollect" className="realised_button">FormCollect</Link>
       </div>
     </div>
 );

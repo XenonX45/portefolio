@@ -4,7 +4,6 @@ import "../styles/Timeline.css";
 import CapgeminiLogo from "../img/capgemini_logo.png";
 import SchoolLogo from "../img/esiea.png"; // Logo pour les formations
 
-// Données des expériences professionnelles
 const experiences = [
   {
     id: 1,
@@ -13,12 +12,12 @@ const experiences = [
     logo: CapgeminiLogo,
     date: "22 Septembre 2023 - Aujourd'hui",
     location: "Toulouse, France",
-    responsibility: "Développement et implémentation de solutions internes",
+    responsibility: "Développement et implémentation de solutions pour Airbus",
     status: "Alternant",
     description: [
       "Participer à l'implémentation de processus fonctionnels.",
       "Interfaçage avec des solutions tierces via API.",
-      "Développement d'applications à usage interne.",
+      "Développement d'applications pour Airbus.",
       "Mise en place de bonnes pratiques.",
     ],
     technologies: ["Javascript", "UnitTest"],
@@ -31,7 +30,7 @@ const experiences = [
     logo: CapgeminiLogo,
     date: "27 février 2023 - 28 août 2023",
     location: "Toulouse, France",
-    responsibility: "Développement et maintenance d’une application web",
+    responsibility: "Développement et maintenance d’une application web de recrutement",
     status: "Stagiaire",
     description: [
       "Développement et maintenance d'une application web.",
@@ -43,7 +42,6 @@ const experiences = [
   },
 ];
 
-// Données des formations
 const formations = [
   {
     id: 1,
@@ -73,7 +71,6 @@ const Timeline = () => {
     <section id="timeline">
       <h2 className="timeline-title">Mon Parcours</h2>
       <div className="timeline-container">
-        {/* Expériences professionnelles */}
         {experiences.map((exp, index) => (
           <div key={exp.id} className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}>
             <div className="timeline-content" onClick={() => openPopup(exp)}>
@@ -86,23 +83,21 @@ const Timeline = () => {
           </div>
         ))}
 
-        {/* Formations (Toujours à droite) */}
         {formations.map((formation) => (
           <div key={formation.id} className="timeline-item formation">
-          <div className="timeline-content" onClick={() => openPopup(formation)}>
-            <a href={formation.schoolWebsite} target="_blank" rel="noopener noreferrer">
-              <img src={formation.logo} alt={formation.school} className="timeline-logo" />
-            </a>
-            <h3>{formation.title}</h3>
-            <h4>{formation.school}</h4>
-            <p className="timeline-date">{formation.date}</p>
-            <p className="timeline-location">{formation.location}</p>
+            <div className="timeline-content" onClick={() => openPopup(formation)}>
+              <a href={formation.schoolWebsite} target="_blank" rel="noopener noreferrer">
+                <img src={formation.logo} alt={formation.school} className="timeline-logo" />
+              </a>
+              <h3>{formation.title}</h3>
+              <h4>{formation.school}</h4>
+              <p className="timeline-date">{formation.date}</p>
+              <p className="timeline-location">{formation.location}</p>
+            </div>
           </div>
-        </div>
         ))}
       </div>
 
-      {/* Fenêtre pop-up */}
       {selectedItem && (
         <div className="popup-overlay" onClick={closePopup}>
           <div className="popup-content" onClick={(e) => e.stopPropagation()}>
@@ -111,8 +106,14 @@ const Timeline = () => {
             <h4>{selectedItem.company || selectedItem.school}</h4>
             <p className="popup-date">{selectedItem.date}</p>
             <p><strong>Lieu :</strong> {selectedItem.location}</p>
-
-            {/* Expérience : Missions, technologies et projets */}
+            
+            {selectedItem.responsibility && selectedItem.status && (
+              <>
+                <p><strong>Responsabilité :</strong> {selectedItem.responsibility}</p>
+                <p><strong>Statut :</strong> {selectedItem.status}</p>
+              </>
+            )}
+            
             {selectedItem.description && Array.isArray(selectedItem.description) && (
               <>
                 <h4>Missions :</h4>
@@ -139,17 +140,11 @@ const Timeline = () => {
                 </div>
               </>
             )}
-
-            {/* Formation : Diplôme et site web */}
+            
             {selectedItem.diploma && (
               <>
                 <p><strong>Diplôme :</strong> {selectedItem.diploma}</p>
                 <p>{selectedItem.description}</p>
-                <p>
-                  <a href={selectedItem.schoolWebsite} target="_blank" rel="noopener noreferrer">
-                    Visiter le site de l'école
-                  </a>
-                </p>
               </>
             )}
           </div>

@@ -22,7 +22,15 @@ function Agile() {
       <p>Grâce à ma formation, j’ai acquis cette compétence via, dans un premier temps, la théorie, puis via une formation pratique grâce à des projets concrets que j’ai eu la chance d’avoir durant mon cursus d’expert en ingénierie du logiciel. L’Agile Scrum peut paraître complexe au début, notamment en raison de ses principes et de sa structure. Cependant, avec des projets pratiques, cela devient rapidement notre quotidien et naturel. De plus, grâce à mon Scrum Master dans mon projet actuel, j’ai pu avoir une réunion explicative où j’ai pu poser toutes mes questions pour mieux comprendre les zones d’ombre que j’avais, et cela m’a beaucoup aidé à mes débuts dans ce projet, car les autres membres de l’équipe avaient déjà beaucoup d’expérience auparavant dans l’Agile Scrum.</p>
       <p>Durant mon quotidien de développeur et dans ma vie personnelle, j’essaie dans la majeure partie du temps d’utiliser l’Agile Scrum, car cette manière de s’organiser permet une meilleure gestion des délais ainsi qu’une gestion accrue de l’avancement de nos différents projets, qu’ils soient personnels ou professionnels. L’adaptabilité et la flexibilité que l’agilité procure permettent de pouvoir résoudre des imprévus tout en gardant une discipline dans nos projets. Actuellement, je souhaite gagner plus d’expérience en Agile Scrum pour me permettre dans le futur de pouvoir gérer une équipe dans un projet qui sera en Agile Scrum.</p>
       <p>Pour le moment, ma carrière n’a pas nécessité d’avoir un niveau très approfondi en Agile Scrum. Néanmoins, dans un futur proche, lorsque je souhaiterai me pencher davantage sur une carrière dans la gestion d’équipe, je me pencherai sur le sujet de manière plus approfondie en lisant le livre "Gestion de projet agile". Ce livre sera l’un des processus d’autoformation les plus importants dans ma carrière, car cela sera le passage d’un métier technique à un métier qui se concentrera davantage sur la gestion d’une équipe via la méthodologie Agile Scrum. Grâce à ce livre, j’apprendrai les détails qui me manquent actuellement pour me considérer comme un expert de cette compétence.</p>
-
+      <br></br>
+      <h3>Réalisations associées</h3>
+      <div className="realised_container">
+        <Link to="/realisations/Ebrush" className="realised_button">Ebrush</Link>
+        <Link to="/realisations/eRec" className="realised_button">eRec</Link>
+        <Link to="/realisations/FormCollect" className="realised_button">FormCollect</Link>
+        <Link to="/realisations/LocaDax" className="realised_button">LocaDax</Link>
+        <Link to="/realisations/RezDrive" className="realised_button">RezDrive</Link>
+      </div>
     </div>
 );
 }

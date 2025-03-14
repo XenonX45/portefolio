@@ -25,6 +25,7 @@ function XML() {
       <h3>Réalisations associées</h3>
       <div className="realised_container">
         <Link to="/realisations/FormCollect" className="realised_button">FormCollect</Link>
+        <Link to="/realisations/eRec" className="realised_button">eRec</Link>
       </div>
     </div>
 );

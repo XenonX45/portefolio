@@ -49,7 +49,12 @@ function Ebrush() {
       <p>Ce projet m’a permis de développer de nombreuses compétences grâce aux membres expérimentés de mon équipe. J’ai appris des techniques d’optimisation et de maintenabilité du code que je ne connaissais pas auparavant, ce qui m’a énormément apporté pour mes futurs projets.</p>
       <br></br>
       <h3>Compétences associées</h3>
-      <div className='realised_button'></div>
+      <div className="realised_container">
+        <Link to="/competences/Autonomie" className="realised_button">Autonomie</Link>
+        <Link to="/competences/Adaptabilite" className="realised_button">Adaptabilité</Link>
+        <Link to="/competences/Communication" className="realised_button">Communication</Link>
+        <Link to="/competences/Agile" className="realised_button">Agile</Link>
+      </div>
     </div>
 );
 }

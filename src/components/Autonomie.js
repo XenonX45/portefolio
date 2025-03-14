@@ -24,7 +24,7 @@ function Autonomie() {
       <h3>Réalisations associées</h3>
       <div className="realised_container">
         <Link to="/realisations/eRec" className="realised_button">eRec</Link>
-        <Link to="/realisations/WebFTI" className="realised_button">WebFTI</Link>
+        <Link to="/realisations/Ebrush" className="realised_button">Ebrush</Link>
       </div>
     </div>
 );

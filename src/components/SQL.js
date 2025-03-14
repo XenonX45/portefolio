@@ -25,6 +25,8 @@ function SQL() {
       <h3>Réalisations associées</h3>
       <div className="realised_container">
         <Link to="/realisations/eRec" className="realised_button">eRec</Link>
+        <Link to="/realisations/RezDrive" className="realised_button">RezDrive</Link>
+        <Link to="/realisations/LocaDax" className="realised_button">LocaDax</Link>
       </div>
     </div>
 );
