@@ -2,12 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/AllRealisations.css"; // Assurez-vous de créer ce fichier CSS
 
-// Liste des réalisations
 const realisations = [
   {
     id: 1,
     name: "eRec",
-    description: "Optimap est un outil interne de gestion client permettant d'optimiser et de faciliter les processus de prospection employés par les commerciaux et les assistantes commerciales au sein de l'entreprise EUPHORIA.",
+    description: "Erec est un outil de gestion du recrutement uniquement utilisé par Capgemini Engineering en interne. Cet outil est utilisé par plus de 500 recruteurs de Capgemini France, ce qui leur permet d’optimiser le processus métier lors de leur recrutement.",
     technologies: ["Angular", "C#", "SQL", "UNIT Test", "XML"],
     skills: ["Agile", "Communication", "Autonomie", "Adaptabilité"],
     tag: "#technique"
@@ -15,7 +14,7 @@ const realisations = [
   {
     id: 2,
     name: "RezDrive",
-    description: "Altara est un serveur de jeu pour GTA V dont le style de jeu est axé sur le jeu de rôles...",
+    description: "Le but de l’équipe Rez Drive était de développer une application web pour école de conduite Michelet présente à Montauban. L’objectif de cette application web était de moderniser l’organisation interne via des plannings dynamiques spécifiques à chaque membre présent dans l’établissement de l’auto-école.",
     technologies: ["Java", "Angular", "UNIT Test", "SQL"],
     skills: ["Agile", "Communication"],
     tag: "#technique"
@@ -23,7 +22,7 @@ const realisations = [
   {
     id: 3,
     name: "FormCollect",
-    description: "Apps47 est un ensemble de deux applications Android pour le Conseil départemental du Lot-et-Garonne...",
+    description: "L’association AFDAS souhaitait moderniser le fonctionnement de collection dans les points relais qu’il devait gérer dans l’agglomération d’Agen. Pour faire cela il souhaitait que nous développions une application Android qu’il pourrait utiliser plutôt que d’utiliser du papier.",
     technologies: ["Java", "XML"],
     skills: ["Agile", "Communication"],
     tag: "#technique"
@@ -31,7 +30,7 @@ const realisations = [
   {
     id: 4,
     name: "LocaDax",
-    description: "Apps47 est un ensemble de deux applications Android pour le Conseil départemental du Lot-et-Garonne...",
+    description: "La ville de Dax souhaitait moderniser leur manière de gérer les archives des entreprises présentent à Dax pour ce faire elle souhaitait avoir un logiciel qui leur permettrait de remplacer ces archives qui commence à augmenter la difficulté de la ville de Dax à retrouver les données d’une entreprise facilement.",
     technologies: ["C#", "SQL"],
     skills: ["Agile", "Communication"],
     tag: "#technique"
@@ -39,7 +38,7 @@ const realisations = [
   {
     id: 5,
     name: "Ebrush",
-    description: "Apps47 est un ensemble de deux applications Android pour le Conseil départemental du Lot-et-Garonne...",
+    description: "Ebrush est une application web faisant partie d’une plus grande application nommée FTEMenu cette application a pour but d’aider les ingénieurs navigants chez Airbus durant leur configuration pour leur teste en vol.",
     technologies: ["Javascript"],
     skills: ["Agile", "Communication", "Autonomie", "Adaptabilité"],
     tag: "#technique"
@@ -51,7 +50,6 @@ const AllRealisations = () => {
     <div className="realisations-container">
       {realisations.map((realisation) => (
         <div key={realisation.id} className="realisation-card">
-          {/* Card Body */}
           <div className="card-body">
             <h2>{realisation.name}</h2>
             <p className="realisation-description">{realisation.description}</p>
@@ -73,9 +71,13 @@ const AllRealisations = () => {
                 </Link>
               ))}
             </div>
+
+            {/* Bouton pour voir la réalisation */}
+            <Link to={`/realisations/${realisation.name.toLowerCase()}`} className="view-button">
+              Voir la réalisation
+            </Link>
           </div>
 
-          {/* Card Footer */}
           <div className="card-footer">
             <span className="realisation-tag">{realisation.tag}</span>
           </div>

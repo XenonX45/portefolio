@@ -2,25 +2,32 @@ import React from 'react';
 import { Link } from "react-router-dom";
 function Adaptabilite() {
   return (
-    <div>
+    <div className="container_components">
       <h1>Adaptabilité</h1>
-      <h3 class="subtitle">Introduction</h3>
-      <p></p>
-      <p></p>
-      <p></p>
+      <h3 className="subtitle">Introduction</h3>
+      <p>L’adaptabilité est une compétence qui vise à réussir à s’adapter rapidement à des changements de milieux ou d’environnement. Cela peut être vu comme le fait de pouvoir rapidement changer d’emplacement géographique sans que cela ait un réel impact sur le succès d’un projet quelconque.</p>
+      <p>Cette compétence est l’une des compétences que tout développeur devrait avoir. En effet, en entreprise, il peut y avoir des hauts comme des bas et cela demande une certaine adaptabilité pour permettre aux employés de ne pas être affectés par ces changements qu’il pourrait y avoir. De plus, en tant que développeur, durant notre carrière, les entreprises nous demanderont d’apprendre de nouvelles compétences ainsi que de nouveaux langages informatiques qui sortiront dans le futur. Pour toutes ces raisons, l’adaptabilité est une compétence utile en entreprise.</p>
+      <p>L’adaptabilité des employés a notamment été utile durant la pandémie du Covid-19. En effet, de nombreuses entreprises ont été impactées, de ce fait elles ont dû s’adapter rapidement en utilisant de nouvelles méthodes de travail comme le télétravail. Les employés ont dû ajuster leurs habitudes en s’adaptant à l’aide de nouveaux outils qu’ils ont dû maîtriser sur le tas tout en maintenant la même productivité qu’ils avaient avant la pandémie du Covid-19. Cette flexibilité a permis de continuer l’ensemble des développements des projets des entreprises sans perturbation. De plus, avec l’entrée des IA dans le monde du travail, les employés ont dû s’adapter pour pouvoir rester compétitifs. Les entreprises qui ont su placer leurs collaborateurs au centre de cette transformation technologique via des formations ont ainsi optimisé leur productivité et offert de meilleures expériences client.</p>
       <br></br>
-      <h3 class="subtitle">Mon expérience vécue</h3>
-      <p></p>
-      <p></p>
+      <h3 className="subtitle">Mon expérience vécue</h3>
+      <p>Dans mon projet actuel, j'ai dû faire preuve d’une grande adaptabilité. En effet, durant le projet WebFTI, j’ai dû rapidement suivre une formation en React, un framework que je n’avais jamais utilisé auparavant. Cette formation sur les bases de React a pour but de réaliser un prototype d’utilisation d’un widget que nous avions développé durant le projet. Grâce à mon bon niveau d’adaptabilité, j’ai su faire face à cet imprévu en réalisant avec succès le développement de ce prototype React en implémentant le widget développé.</p>
+      <p>J’ai aussi dû m’adapter au changement de locaux. En effet, durant mon projet WebFTI où je suis encore actuellement en alternance, Capgemini Aeropark a fermé. De ce fait, cela m’a lourdement impacté au niveau de mon temps de déplacement pour aller de mon domicile à mon travail, passant de 10 min de trajet à 50 min de trajet. Néanmoins, grâce à mon adaptabilité, j’ai su faire face à ce problème en optimisant mon temps de sommeil pour toujours rester aussi productif durant ma journée.</p>
+      <p>Mon adaptabilité a permis de faire face à ce type d’imprévu que le client a décidé de mettre en place au dernier moment sans avoir mis au courant l’équipe. Néanmoins, le résultat a été un succès : le client a pu avoir l’ensemble des ajouts qu’il nous avait demandés dans les délais. Pour le déplacement de mon entreprise durant mon projet actuel, j’ai réussi à garder le même niveau de productivité en m’adaptant à mon nouveau bâtiment de travail et à mes nouveaux temps de trajet.</p>
       <br></br>
-      <h3 class="subtitle">Mon niveau de compétence</h3>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
+      <h3 className="subtitle">Mon niveau de compétence</h3>
+      <p>L’adaptabilité est une compétence importante pour moi, je considère mon niveau comme correct dans cette compétence. En effet, avec mon expérience actuelle et ma manière de réussir à m’adapter dans de nombreuses situations, comme le prouvent mes expériences, je suis d’un bon niveau en matière d’adaptabilité. Par exemple, lors de mon projet sur WebFTI, j’ai dû m’adapter quand les ressources ont changé soudainement tout en respectant la même productivité. Toutefois, je reconnais que dans le cadre de certains projets, une analyse et une réaction plus rapide sont nécessaires. Je travaille constamment sur l’amélioration de cet aspect de l’adaptabilité.</p>
+      <p>Bien que je m’adapte généralement bien, comme le prouve le projet où je suis actuellement WebFTI, je réalise que mon adaptabilité pourrait encore être optimisée dans d’autres projets où les contraintes sont plus fortes et où les attentes changent plus fréquemment que sur mon projet actuel. Je souhaite donc travailler sur ma capacité à rester flexible tout en maintenant une qualité constante sur la qualité de mes livrables, indépendamment des circonstances du projet.</p>
+      <p>Dans mon rôle actuel et pour mon profil d’expert en ingénierie du logiciel, l’adaptabilité est une compétence cruciale. Elle me permet de naviguer sur différents projets professionnels et de répondre efficacement aux besoins changeants de mes clients ou de mes projets. Cette compétence est donc primordiale dans mon développement personnel et professionnel.</p>
+      <p>Ma vitesse d’apprentissage de cette compétence a été plutôt rapide. En effet, j’ai remarqué une nette amélioration de ma capacité à acquérir rapidement de nouvelles façons de travailler ou à intégrer des changements inattendus comme le changement de la manière d’étudier avec l’arrivée du Covid-19. Nous sommes passés du présentiel au distanciel, et de nouveaux outils et méthodes d’apprentissage ont été mis en place.</p>
+      <p>Avec mon expérience actuelle, je me rends compte que l’adaptabilité n’est pas uniquement le fait de répondre aux changements de situation, mais implique également l’anticipation de futurs événements. Mon conseil pour quelqu’un qui souhaite développer cette compétence serait de rester curieux et ouvert d’esprit tout en recherchant activement des opportunités pour s’exercer sur de nombreux projets.</p>
+      <p>Je situe cette compétence comme un pilier de mon projet professionnel. À moyen terme, je vise à devenir encore plus flexible dans le cadre professionnel comme personnel.</p>
+      <p>Pour développer davantage cette compétence, je prévois d’en apprendre plus via des formations sur la gestion du changement. De plus, je m’intéresse aux ateliers collaboratifs pour pratiquer différents types de scénarios qui nécessiteraient une bonne adaptabilité.</p>
       <br></br>
       <h3>Réalisations associées</h3>
-      <div className='realised_button'></div>
+      <div className="realised_container">
+        <Link to="/realisations/WebFTI" className="realised_button">WebFTI</Link>
+        <Link to="/realisations/FormationReact" className="realised_button">Formation React</Link>
+      </div>
     </div>
 );
 }

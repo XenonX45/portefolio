@@ -35,10 +35,16 @@ h1, h3{
   margin-top: 0;
 }
 
-.subtitle {
+h3.subtitle {
   color: rgb(71, 147, 209);
   text-align: left;
   margin-top: 3vh;
+}
+
+h5.subtitle {
+  color: rgb(71, 147, 209);
+  text-align: left;
+  margin: 0;
 }
 
 p{

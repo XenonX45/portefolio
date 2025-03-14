@@ -91,7 +91,6 @@ const AllCompetences = () => {
     <div className="competences-container">
       {competences.map((competence) => (
         <div key={competence.id} className="competence-card">
-          {/* Card Body */}
           <div className="card-body">
             <h2>{competence.name}</h2>
 
@@ -102,10 +101,9 @@ const AllCompetences = () => {
               ))}
             </div>
 
-            {/* Niveau */}
             <span className="competence-level">{competence.level}</span>
 
-            {/* Boutons Réalisations */}
+            {/* Réalisations associées */}
             <div className="realised-container">
               {competence.realisations.map((realisation, index) => (
                 <Link key={index} to={`/realisations/${realisation.toLowerCase()}`} className="realised-button">
@@ -113,9 +111,13 @@ const AllCompetences = () => {
                 </Link>
               ))}
             </div>
+
+            {/* Bouton pour voir la compétence */}
+            <Link to={`/competences/${competence.name.toLowerCase()}`} className="view-button">
+              Voir la compétence
+            </Link>
           </div>
 
-          {/* Card Footer */}
           <div className="card-footer">
             <span className="competence-tag">{competence.tag}</span>
           </div>

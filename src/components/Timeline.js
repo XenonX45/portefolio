@@ -1,33 +1,36 @@
 import React, { useState } from "react";
-import "../styles/Timeline.css"; // Assurez-vous de créer ce fichier CSS
+import { Link } from "react-router-dom";
+import "../styles/Timeline.css"; 
 import CapgeminiLogo from "../img/capgemini_logo.png";
-// Données des expériences
+import SchoolLogo from "../img/esiea.png"; // Logo pour les formations
+
+// Données des expériences professionnelles
 const experiences = [
   {
     id: 1,
     title: "Développeur Full Stack",
-    company: "E FOR IA Pamiers",
+    company: "Capgemini",
     logo: CapgeminiLogo,
-    date: "6 septembre 2021 - 6 septembre 2023",
-    location: "Pamiers, France",
+    date: "22 Septembre 2023 - Aujourd'hui",
+    location: "Toulouse, France",
     responsibility: "Développement et implémentation de solutions internes",
     status: "Alternant",
     description: [
-      "Participer à l'implémentation de processus fonctionnels dans les applications de la suite logicielle E FOR BIZZ commercialisée par E FOR IA.",
-      "Interfaçage avec des solutions tierces grâce à une API.",
+      "Participer à l'implémentation de processus fonctionnels.",
+      "Interfaçage avec des solutions tierces via API.",
       "Développement d'applications à usage interne.",
       "Mise en place de bonnes pratiques.",
     ],
-    technologies: ["Optimap", "React", "NodeJS", "MongoDB", "Java Android"],
-    projects: ["Optimap", "FormCollect"],
+    technologies: ["Javascript", "UnitTest"],
+    projects: ["Ebrush"],
   },
   {
     id: 2,
     title: "Stage Développeur Web",
-    company: "XYZ Entreprise",
+    company: "Capgemini",
     logo: CapgeminiLogo,
-    date: "15 février 2021 - 15 août 2021",
-    location: "Paris, France",
+    date: "27 février 2023 - 28 août 2023",
+    location: "Toulouse, France",
     responsibility: "Développement et maintenance d’une application web",
     status: "Stagiaire",
     description: [
@@ -35,26 +38,42 @@ const experiences = [
       "Mise en place de tests unitaires pour garantir la qualité du code.",
       "Optimisation des performances des requêtes SQL.",
     ],
-    technologies: ["Java", "SQL", "Angular", "UnitTest"],
-    projects: ["RezDrive", "Ebrush"],
+    technologies: ["Angular", "C#", "SQL", "UnitTest"],
+    projects: ["eRec"],
+  },
+];
+
+// Données des formations
+const formations = [
+  {
+    id: 1,
+    title: "Bachelor informatique option ingénierie du logiciel",
+    school: "Esiea",
+    logo: SchoolLogo,
+    date: "2020 - 2022",
+    location: "Agen, France",
+    diploma: "Bachelor informatique option ingénierie du logiciel",
+    description: "Formation spécialisée en développement full-stack et architecture logicielle.",
+    schoolWebsite: "https://www.esiea.fr/",
   },
 ];
 
 const Timeline = () => {
-  const [selectedExperience, setSelectedExperience] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(null);
 
-  const openPopup = (exp) => {
-    setSelectedExperience(exp);
+  const openPopup = (item) => {
+    setSelectedItem(item);
   };
 
   const closePopup = () => {
-    setSelectedExperience(null);
+    setSelectedItem(null);
   };
 
   return (
     <section id="timeline">
       <h2 className="timeline-title">Mon Parcours</h2>
       <div className="timeline-container">
+        {/* Expériences professionnelles */}
         {experiences.map((exp, index) => (
           <div key={exp.id} className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}>
             <div className="timeline-content" onClick={() => openPopup(exp)}>
@@ -66,37 +85,73 @@ const Timeline = () => {
             </div>
           </div>
         ))}
+
+        {/* Formations (Toujours à droite) */}
+        {formations.map((formation) => (
+          <div key={formation.id} className="timeline-item formation">
+          <div className="timeline-content" onClick={() => openPopup(formation)}>
+            <a href={formation.schoolWebsite} target="_blank" rel="noopener noreferrer">
+              <img src={formation.logo} alt={formation.school} className="timeline-logo" />
+            </a>
+            <h3>{formation.title}</h3>
+            <h4>{formation.school}</h4>
+            <p className="timeline-date">{formation.date}</p>
+            <p className="timeline-location">{formation.location}</p>
+          </div>
+        </div>
+        ))}
       </div>
 
-      {/* Fenêtre pop-up pour afficher plus d'infos */}
-      {selectedExperience && (
+      {/* Fenêtre pop-up */}
+      {selectedItem && (
         <div className="popup-overlay" onClick={closePopup}>
           <div className="popup-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-button" onClick={closePopup}>✖</button>
-            <h3>{selectedExperience.title}</h3>
-            <h4>{selectedExperience.company}</h4>
-            <p className="popup-date">{selectedExperience.date}</p>
-            <p><strong>Lieu :</strong> {selectedExperience.location}</p>
-            <p><strong>Responsabilité :</strong> {selectedExperience.responsibility}</p>
-            <p><strong>Statut :</strong> {selectedExperience.status}</p>
-            <h4>Missions :</h4>
-            <ul>
-              {selectedExperience.description.map((desc, i) => (
-                <li key={i}>{desc}</li>
-              ))}
-            </ul>
-            <h4>Technologies utilisées :</h4>
-            <div className="tech-container">
-              {selectedExperience.technologies.map((tech, index) => (
-                <span key={index} className="tech-badge">{tech}</span>
-              ))}
-            </div>
-            <h4>Projets associés :</h4>
-            <div className="projects-container">
-              {selectedExperience.projects.map((project, index) => (
-                <span key={index} className="project-badge">{project}</span>
-              ))}
-            </div>
+            <h3>{selectedItem.title}</h3>
+            <h4>{selectedItem.company || selectedItem.school}</h4>
+            <p className="popup-date">{selectedItem.date}</p>
+            <p><strong>Lieu :</strong> {selectedItem.location}</p>
+
+            {/* Expérience : Missions, technologies et projets */}
+            {selectedItem.description && Array.isArray(selectedItem.description) && (
+              <>
+                <h4>Missions :</h4>
+                <ul>
+                  {selectedItem.description.map((desc, i) => (
+                    <li key={i}>{desc}</li>
+                  ))}
+                </ul>
+                <h4>Technologies utilisées :</h4>
+                <div className="tech-container">
+                  {selectedItem.technologies?.map((tech, index) => (
+                    <Link key={index} to={`/competences/${tech.replace(/ /g, "")}`} className="tech-badge">
+                      {tech}
+                    </Link>
+                  ))}
+                </div>
+                <h4>Projets associés :</h4>
+                <div className="projects-container">
+                  {selectedItem.projects?.map((project, index) => (
+                    <Link key={index} to={`/realisations/${project.replace(/ /g, "")}`} className="project-badge">
+                      {project}
+                    </Link>
+                  ))}
+                </div>
+              </>
+            )}
+
+            {/* Formation : Diplôme et site web */}
+            {selectedItem.diploma && (
+              <>
+                <p><strong>Diplôme :</strong> {selectedItem.diploma}</p>
+                <p>{selectedItem.description}</p>
+                <p>
+                  <a href={selectedItem.schoolWebsite} target="_blank" rel="noopener noreferrer">
+                    Visiter le site de l'école
+                  </a>
+                </p>
+              </>
+            )}
           </div>
         </div>
       )}

@@ -1,109 +1,182 @@
 /* Section principale */
 #timeline {
-    padding: 50px 20px;
-    background: #f9f9f9;
-    text-align: center;
-  }
-  
-  /* Titre */
-  .timeline-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: black;
-  }
-  
-  /* Conteneur de la timeline */
-  .timeline-container {
-    position: relative;
-    max-width: 900px;
-    margin: auto;
-  }
-  
-  /* Ligne verticale */
+  padding: 50px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+/* Titre */
+.timeline-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: black;
+}
+
+/* Conteneur de la timeline */
+.timeline-container {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Ligne verticale */
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: #007bff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Élément de la timeline (expériences & formations) */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Expériences alternent entre gauche et droite */
+.timeline-item.left {
+  text-align: right;
+  left: 0;
+}
+
+.timeline-item.right {
+  text-align: left;
+  left: 50%;
+}
+
+/* FORMER LES FORMATIONS TOUJOURS À DROITE */
+.timeline-item.formation {
+  text-align: left !important;
+  left: 50% !important;
+}
+
+/* Contenu de la timeline */
+.timeline-content {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+  text-align: center; /* Centre le texte */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre tout le contenu */
+  justify-content: center;
+}
+
+/* Logo */
+.timeline-logo {
+  width: 200px; /* Taille ajustée */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Titre */
+.timeline-content h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Nom de la société */
+.timeline-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Date et localisation */
+.timeline-date,
+.timeline-location {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Fenêtre Pop-up */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  min-width: 800px;
+  max-height: 72vh;
+  text-align: left;
+  position: relative;
+  overflow-y: auto;
+  margin-top: 50px;
+}
+
+/* Bouton de fermeture */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
   .timeline-container::after {
-    content: "";
-    position: absolute;
-    width: 4px;
-    background: #007bff;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  /* Élément de la timeline */
-  .timeline-item {
-    position: relative;
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  /* Contenu */
-  .timeline-content {
-    background: white;
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    position: relative;
-    cursor: pointer;
+      left: 20px;
   }
 
-  .timeline-logo{
-    width: 300px;
-    height: 66px;
-  }
-  
-  /* Fenêtre Pop-up */
-  .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .popup-content {
-    background: white;
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    min-width: 800px;
-    height: 80vh;
-    text-align: left;
-    position: relative;
-    overflow-y: auto;
-    margin-top: 85px;
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  /* Responsive */
-  @media screen and (max-width: 768px) {
-    .timeline-container::after {
-      left: 20px;
-    }
-  
-    .timeline-item {
+  .timeline-item {
       width: 100%;
       left: 0;
       text-align: left;
       padding-left: 40px;
-    }
   }
-  
+}
+
+/* Conteneur des technologies et des projets */
+.tech-container, .projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Boutons technologies et projets */
+.tech-badge, .project-badge {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.tech-badge:hover, .project-badge:hover {
+  background-color: #0056b3;
+}
