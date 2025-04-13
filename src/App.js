@@ -20,6 +20,7 @@ import XML from "./components/XML";
 import Aproposdemoi from "./components/Aproposdemoi";
 import AllCompetences from "./components/AllCompetences";
 import Allrealisation from "./components/Allrealisation";
+import Contact from "./components/Contact";
 import "./App.css";
 
 function AppContent() {
@@ -50,7 +51,7 @@ function AppContent() {
           <Route path="/presentation/Aproposdemoi" element={<Aproposdemoi />} />
           <Route path="/competences" element={<AllCompetences />} />
           <Route path="/realisations" element={<Allrealisation />} />
-          <Route path="/contact" element={<div>Contact Page</div>} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </div>
