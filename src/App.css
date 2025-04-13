@@ -76,3 +76,7 @@ justify-content: center;
 .realised_button:hover {
   background-color: #0056b3;
 }
+
+img.formcollect{
+  width: 49vw;
+}

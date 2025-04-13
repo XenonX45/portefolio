@@ -12,18 +12,18 @@ function LocaDax() {
       <p>De plus, ils souhaitaient pouvoir accéder à un tableau de statistiques sur le nombre de types de commerce présents par rapport aux rues, ainsi que le pourcentage de types de commerce dans l’ensemble de la ville, avec un système d’exportation automatique qui leur enverrait les données chaque année. Un système de filtres permettrait d’accéder rapidement aux locaux ainsi qu’à un propriétaire, ce qui permettrait d’avoir de meilleures informations sur les locaux disponibles dans une rue spécifique, un prix spécifique ou une superficie spécifique, par exemple, pour que de nouveaux acheteurs potentiels puissent en acquérir, ce qui n’était pas possible avant que le logiciel soit développé.</p>
       <br></br>
       <h3 className="subtitle">Les étapes</h3>
-      <p>La première étape essentielle a été la récupération de la charte graphique de la ville de Dax pour créer un logiciel qui représenterait correctement la ville.</p>
-      <p>Grâce aux échanges effectués avec le commanditaire, nous avons pu établir une base de données conforme aux attentes.</p>
-      <p>Nous avons conçu une structure de base de données permettant de stocker les informations relatives aux locaux, aux porteurs de projet et aux statistiques souhaitées.</p>
-      <p>L'application permet d'enregistrer et de suivre les porteurs de projet.</p>
-      <p>Chaque porteur de projet peut définir ses critères de recherche pour trouver un local, facilitant ainsi l'attribution des espaces commerciaux disponibles en fonction des besoins.</p>
-      <p>Nous avons par la suite mis en place un module de création et de gestion des locaux commerciaux.</p>
-      <p>Chaque local peut être ajouté avec une description détaillée, des photos multiples et des informations essentielles telles que la superficie et la localisation.</p>
-      <p>Un module a été intégré pour définir les prix des locaux vacants.</p>
-      <p>Nous avons développé un module permettant d'analyser la vacance des locaux en fonction de différents critères : taille, rue et type d'activité.</p>
-      <p>Cela permet au client d'identifier les zones où les locaux sont les plus vacants et d'en tirer des conclusions sur le dynamisme économique de la ville.</p>
-      <p>Nous avons également mis en place une cartographie interactive pour visualiser ces locaux sur une carte dynamique.</p>
-      <p>Enfin, nous avons ajouté un système d’exportation de données sous divers formats pour assurer un suivi optimal.</p>
+      <p>La première étape essentielle a été la récupération de la charte graphique de la ville de Dax pour créer un logiciel qui représentera correctement la ville. Grâce aux échanges effectués avec le commanditaire, nous avons pu établir une base de données conforme aux attentes. Nous avons donc conçu une structure de base de données permettant de stocker les informations relatives aux locaux, aux porteurs de projet et aux statistiques souhaitées.</p>
+      <p>L'application permet d'enregistrer et de suivre les porteurs de projet. Chaque porteur de projet peut définir ses critères de recherche pour trouver un local, facilitant ainsi l'attribution des espaces commerciaux disponibles en fonction des besoins.</p>
+      <p>J'ai par la suite mis en place un module de création et de gestion des locaux commerciaux. Chaque local peut être ajouté avec une description détaillée, des photos multiples et des informations essentielles telles que la superficie et la localisation. Un module a été intégré pour définir les prix des locaux vacants. Le client peut renseigner les prix en fonction de la superficie des locaux et du type de location ou de vente.</p>
+      <p>J'ai intégré la possibilité d'ajouter plusieurs photos pour chaque local afin de mieux illustrer les offres disponibles. Chaque local peut également comporter un descriptif détaillé, facilitant la présentation des biens aux porteurs de projet.</p>
+      <p>L'application permet d'exporter les fiches des locaux au format PDF, facilitant ainsi leur diffusion et leur archivage. De plus, les statistiques peuvent être exportées à tout moment selon les besoins. L'outil offre diverses analyses statistiques sous forme de graphiques en histogrammes, bulles et tableaux. Grâce à ces statistiques, nous pouvons obtenir des informations clés sur les tendances du marché immobilier commercial actuel de la ville.</p>
+      <p>J'ai pu développé un module permettant d'analyser la vacance des locaux en fonction de différents critères : taille, rue et type d'activité. Cela permet au client d'identifier les zones où les locaux sont les plus vacants et d'en tirer des conclusions sur le dynamisme économique de la ville.</p>
+      <p>Le logiciel gère également des statistiques sur la taille des locaux en trois catégories : les surfaces entre 0-50 m², celles entre 50-100 m² et celles de plus de 100 m². Une cartographie des locaux vacants a été mise en place pour permettre de visualiser plus facilement les locaux vacants de la ville.</p>
+      <p>Un module permet d'analyser les activités dominantes dans les rues de la ville. L'objectif est d'obtenir une vue d'ensemble des types de commerces présents et d'adapter la stratégie de développement économique en conséquence.</p>
+      <p>Le client souhaitait une analyse approfondie des prix des locaux vacants en se basant sur la médiane plutôt que sur la moyenne. Ainsi, j'ai intégré un module permettant de calculer la médiane des prix en fonction de la rue et du type de transaction.</p>
+      <p>j'ai mis en place des outils pour analyser les types d'activités que les porteurs de projet souhaitent implanter en ville. L'application permet d'identifier les locaux les plus demandés et ceux qui répondent le mieux aux attentes des entrepreneurs.</p>
+      <p>Enfin, une fonction bilan a été ajoutée pour suivre l'activité de la base de données. Le client peut ainsi connaître le nombre de fiches extraites et suivre l'utilisation globale du logiciel.</p>
+      <p>Ce projet a permis de développer une solution robuste et adaptée aux besoins de la ville de Dax, en facilitant la gestion des locaux commerciaux et en offrant des outils d'analyse selon leurs besoins.</p>
       <br></br>
       <h3 className="subtitle">Les résultats</h3>
       <h5 className="subtitle">Pour moi</h5>
@@ -31,7 +31,7 @@ function LocaDax() {
       <p>Avec ces nombreuses fonctionnalités, cela m’a permis de développer une méthodologie efficace pour la recherche et la correction des erreurs, ainsi que la nécessité de devoir m’auto-former efficacement.</p>
       <br></br>
       <h5 className="subtitle">Pour l'entreprise</h5>
-      <p>Lors de la finalisation du projet, la ville de Dax était très satisfaite de l’ensemble du logiciel que nous avons développé. L’ensemble des fonctionnalités demandées au départ ainsi qu’en cours de route ont été développées et testées pour éviter de futurs problèmes.</p>
+      <p>Lors de la finalisation du projet, la ville de Dax était très satisfaite de l’ensemble du logiciel que nous avons développé. Les fonctionnalités demandées au départ ainsi qu’en cours de route ont été développées et testées pour éviter de futurs problèmes.</p>
       <br></br>
       <h5 className="subtitle">Les acteurs</h5>
       <p>Ce projet a impliqué de nombreux acteurs :</p>
@@ -50,7 +50,7 @@ function LocaDax() {
       <p>Au départ du projet, j’ai eu quelques doutes sur la réussite du projet compte tenu de l’ensemble des fonctionnalités qui nous avaient été demandées, ainsi que des ajouts en cours de développement.</p>
       <p>De plus, pour l’ensemble de l’équipe, le langage C# et le WPF étaient nouveaux. Pour ces raisons, la réussite de ce projet a été une réelle fierté pour moi et pour l’équipe lors de la livraison de celui-ci à la ville de Dax.</p>
       <p>Avec du recul, j’aurais commencé plus tôt la mise en place d’une routine d’apprentissage du langage C# et du WPF. En effet, durant la réalisation des différentes tâches, j’ai senti un manque de connaissance de ma part de ces nouveaux langages.</p>
-      <p>Cela était normal puisque j’étais en train de développer mes compétences en même temps que de développer le projet. Je pense tout de même que cela m’aurait permis de développer plus rapidement certaines fonctionnalités en résolvant plus rapidement certaines erreurs rencontrées durant la phase de développement.</p>
+      <p>Cela était normal puisque j’étais en train de développer mes compétences en même temps que de développer le projet. Je pense tout de même que cela m’aura permis de développer plus rapidement certaines fonctionnalités en résolvant plus rapidement certaines erreurs rencontrées durant la phase de développement.</p>
       <br></br>
       <h3>Compétences associées</h3>
       <div className="realised_container">
