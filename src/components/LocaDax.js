@@ -31,7 +31,7 @@ function LocaDax() {
       <p>Avec ces nombreuses fonctionnalités, cela m’a permis de développer une méthodologie efficace pour la recherche et la correction des erreurs, ainsi que la nécessité de devoir m’auto-former efficacement.</p>
       <br></br>
       <h5 className="subtitle">Pour l'entreprise</h5>
-      <p>Lors de la finalisation du projet, la ville de Dax était très satisfaite de l’ensemble du logiciel que nous avons développé. Les fonctionnalités demandées au départ ainsi qu’en cours de route ont été développées et testées pour éviter de futurs problèmes.</p>
+      <p>Lors de la finalisation du projet, la ville de Dax était très satisfaite de l’ensemble du logiciel que j'ai développé. Les fonctionnalités demandées au départ ainsi qu’en cours de route ont été développées et testées pour éviter de futurs problèmes.</p>
       <br></br>
       <h5 className="subtitle">Les acteurs</h5>
       <p>Ce projet a impliqué de nombreux acteurs :</p>
@@ -42,9 +42,9 @@ function LocaDax() {
       </ul>
       <br></br>
       <h5 className="subtitle">Les lendemains du projet</h5>
-      <p>À la suite du projet, celui-ci a été utilisé par les membres de la ville de Dax ainsi que des potentiels investisseurs. Nous n’avons pas eu de retour sur d’éventuels bugs ou erreurs que le logiciel aurait pu avoir.</p>
+      <p>À la suite du projet, celui-ci a été utilisé par les membres de la ville de Dax ainsi que des potentiels investisseurs. Je n'ai pas eu de retour sur d’éventuels bugs ou erreurs que le logiciel aurait pu avoir.</p>
       <p>Actuellement, le logiciel pourrait être utilisé dans de nombreuses villes qui souhaiteraient moderniser leur organisation interne dans la gestion de leurs locaux commerciaux.</p>
-      <p>Malheureusement, pour le moment, seule la ville de Dax utilise notre logiciel. Nous espérons que celui-ci sera déployé dans d’autres villes françaises dans un futur proche.</p>
+      <p>Malheureusement, pour le moment, seule la ville de Dax utilise notre logiciel. J'espérais que celui-ci sera déployé dans d’autres villes françaises dans un futur proche.</p>
       <br></br>
       <h5 className="subtitle">Mon point de vue</h5>
       <p>Au départ du projet, j’ai eu quelques doutes sur la réussite du projet compte tenu de l’ensemble des fonctionnalités qui nous avaient été demandées, ainsi que des ajouts en cours de développement.</p>
