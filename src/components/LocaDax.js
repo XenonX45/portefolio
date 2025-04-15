@@ -1,5 +1,20 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import chartegraphique from "../img/capture/locadax/chartegraphique.png";
+import connexionbd from "../img/capture/locadax/connexionbd.png";
+import ajoutcustomer from "../img/capture/locadax/ajoutcustomer.png";
+import ajoutlocaux from "../img/capture/locadax/ajoutlocaux.png";
+import ajoutphoto from "../img/capture/locadax/ajoutphoto.png";
+import exportfileinpdf from "../img/capture/locadax/exportfileinpdf.png";
+import statistique from "../img/capture/locadax/statistique.png";
+import analyselocauxvacants from "../img/capture/locadax/analyselocauxvacants.png";
+import analysetaillearea from "../img/capture/locadax/analysetaillearea.png";
+import dominancelocauxstreet from "../img/capture/locadax/dominancelocauxstreet.png";
+import dominancelocauxstreet2 from "../img/capture/locadax/dominancelocauxstreet2.png";
+import carographie from "../img/capture/locadax/carographie.png";
+import calculemedianprice from "../img/capture/locadax/calculemedianprice.png";
+import activitydesire from "../img/capture/locadax/activitydesire.png";
+import bilanfonction from "../img/capture/locadax/bilanfonction.png";
 function LocaDax() {
   return (
     <div className="container_components">
@@ -13,16 +28,32 @@ function LocaDax() {
       <br></br>
       <h3 className="subtitle">Les étapes</h3>
       <p>La première étape essentielle a été la récupération de la charte graphique de la ville de Dax pour créer un logiciel qui représentera correctement la ville. Grâce aux échanges effectués avec le commanditaire, nous avons pu établir une base de données conforme aux attentes. Nous avons donc conçu une structure de base de données permettant de stocker les informations relatives aux locaux, aux porteurs de projet et aux statistiques souhaitées.</p>
+      <img className="locadax" src={chartegraphique}></img>
+      <img className="locadax" src={connexionbd}></img>
       <p>L'application permet d'enregistrer et de suivre les porteurs de projet. Chaque porteur de projet peut définir ses critères de recherche pour trouver un local, facilitant ainsi l'attribution des espaces commerciaux disponibles en fonction des besoins.</p>
+      <img className="locadax" src={ajoutcustomer}></img>
+      
       <p>J'ai par la suite mis en place un module de création et de gestion des locaux commerciaux. Chaque local peut être ajouté avec une description détaillée, des photos multiples et des informations essentielles telles que la superficie et la localisation. Un module a été intégré pour définir les prix des locaux vacants. Le client peut renseigner les prix en fonction de la superficie des locaux et du type de location ou de vente.</p>
+      <img className="locadax" src={ajoutlocaux}></img>
       <p>J'ai intégré la possibilité d'ajouter plusieurs photos pour chaque local afin de mieux illustrer les offres disponibles. Chaque local peut également comporter un descriptif détaillé, facilitant la présentation des biens aux porteurs de projet.</p>
+      <img className="locadax" src={ajoutphoto}></img>
       <p>L'application permet d'exporter les fiches des locaux au format PDF, facilitant ainsi leur diffusion et leur archivage. De plus, les statistiques peuvent être exportées à tout moment selon les besoins. L'outil offre diverses analyses statistiques sous forme de graphiques en histogrammes, bulles et tableaux. Grâce à ces statistiques, nous pouvons obtenir des informations clés sur les tendances du marché immobilier commercial actuel de la ville.</p>
+      <img className="locadax" src={exportfileinpdf}></img>
+      <img className="locadax" src={statistique}></img>
       <p>J'ai pu développé un module permettant d'analyser la vacance des locaux en fonction de différents critères : taille, rue et type d'activité. Cela permet au client d'identifier les zones où les locaux sont les plus vacants et d'en tirer des conclusions sur le dynamisme économique de la ville.</p>
+      <img className="locadax" src={analyselocauxvacants}></img>
       <p>Le logiciel gère également des statistiques sur la taille des locaux en trois catégories : les surfaces entre 0-50 m², celles entre 50-100 m² et celles de plus de 100 m². Une cartographie des locaux vacants a été mise en place pour permettre de visualiser plus facilement les locaux vacants de la ville.</p>
+      <img className="locadax" src={analysetaillearea}></img>
+      <img className="locadax" src={carographie}></img>
       <p>Un module permet d'analyser les activités dominantes dans les rues de la ville. L'objectif est d'obtenir une vue d'ensemble des types de commerces présents et d'adapter la stratégie de développement économique en conséquence.</p>
+      <img className="locadax" src={dominancelocauxstreet}></img>
+      <img className="locadax" src={dominancelocauxstreet2}></img>
       <p>Le client souhaitait une analyse approfondie des prix des locaux vacants en se basant sur la médiane plutôt que sur la moyenne. Ainsi, j'ai intégré un module permettant de calculer la médiane des prix en fonction de la rue et du type de transaction.</p>
+      <img className="locadax" src={calculemedianprice}></img>
       <p>j'ai mis en place des outils pour analyser les types d'activités que les porteurs de projet souhaitent implanter en ville. L'application permet d'identifier les locaux les plus demandés et ceux qui répondent le mieux aux attentes des entrepreneurs.</p>
+      <img className="locadax" src={activitydesire}></img>
       <p>Enfin, une fonction bilan a été ajoutée pour suivre l'activité de la base de données. Le client peut ainsi connaître le nombre de fiches extraites et suivre l'utilisation globale du logiciel.</p>
+      <img className="locadax" src={bilanfonction}></img>
       <p>Ce projet a permis de développer une solution robuste et adaptée aux besoins de la ville de Dax, en facilitant la gestion des locaux commerciaux et en offrant des outils d'analyse selon leurs besoins.</p>
       <br></br>
       <h3 className="subtitle">Les résultats</h3>

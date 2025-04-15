@@ -1,5 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import routeAPIoptimi from "../img/capture/rezdrive/routeAPIoptimi.png";
+import refontePHPtoAngular from "../img/capture/rezdrive/refontePHPtoAngular.png";
+import fluideapplication from "../img/capture/rezdrive/fluideapplication.png";
+import synchroplanning from "../img/capture/rezdrive/synchroplanning.png";
+import systemenotification from "../img/capture/rezdrive/systemenotification.png";
+import testunit from "../img/capture/rezdrive/testunit.png";
+import websocket from "../img/capture/rezdrive/websocket.png";
 function RezDrive() {
   return (
     <div className="container_components">
@@ -14,12 +21,19 @@ function RezDrive() {
       <br></br>
       <h3 className="subtitle">Les étapes</h3>
       <p>La première chose que j’ai faite a été de développer l’API en Java. J’ai structuré plusieurs routes pour optimiser le traitement des requêtes et améliorer les performances. Cela m’a obligé à développer certaines requêtes SQL afin de réduire les temps de réponse et éviter les ralentissements.</p>
+      <img className="rezdrive" src={routeAPIoptimi}></img>
       <p>Ensuite, je me suis attaqué au front-end en Angular. En effet, une version en PHP du front-end existait déjà. J'ai dû faire une refonte du design de l'application web. Cela a demandé de mettre à jour les composants, d’adapter certaines fonctionnalités pour assurer la compatibilité avec les nouvelles versions et d’améliorer l'affichage dynamique pour que l’expérience utilisateur soit plus fluide.</p>
+      <img className="rezdrive" src={refontePHPtoAngular}></img>
       <p>Pour éviter les conflits et s’assurer que les disponibilités des moniteurs et des élèves soient toujours à jour, j’ai intégré les WebSockets. Grâce à cette technologie, les informations sont mises à jour en temps réel, ce qui évite les doublons et les erreurs de réservation. Avant, il fallait actualiser la page pour voir les nouvelles disponibilités, maintenant tout est instantané.</p>
+      <img className="rezdrive" src={websocket}></img>
       <p>Un autre point important a été l’ajout d’un système de notifications, qui permet d’alerter les élèves quand un cours approche et d’envoyer des rappels aux moniteurs en cas de changements dans leur planning. Ces notifications fonctionnent à la fois par email et via des alertes push, ce qui garantit que tout le monde reçoit les informations à temps.</p>
+      <img className="rezdrive" src={systemenotification}></img>
       <p>L’un des gros défis du projet a été de s’assurer que tout fonctionne bien ensemble, car avec des plannings qui changent souvent, il fallait que les mises à jour soient visibles immédiatement et que tout reste bien synchronisé.</p>
+      <img className="rezdrive" src={synchroplanning}></img>
       <p>Pour être sûr que l’application réponde bien aux besoins des utilisateurs, j’ai mis en place des tests avec des élèves et des moniteurs. Grâce à leurs retours, j’ai pu corriger certains problèmes et ajuster l’interface pour la rendre plus intuitive.</p>
+      <img className="rezdrive" src={testunit}></img>
       <p>Avec toutes ces améliorations, l’auto-école dispose maintenant d’un outil performant et moderne qui facilite la planification des sessions et améliore la communication entre les élèves et les moniteurs. Les élèves peuvent réserver leurs créneaux en toute simplicité, tandis que les moniteurs ont une vision claire de leur emploi du temps, le tout sans prise de tête.</p>
+      <img className="rezdrive" src={fluideapplication}></img>
       <br></br>
       <h3 className="subtitle">Les résultats</h3>
       <h5 className="subtitle">Pour moi</h5>
