@@ -1,5 +1,17 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import doubloncheck from "../img/capture/erec/doubloncheck.png";
+import doubloncheck2 from "../img/capture/erec/doubloncheck2.png";
+import doubloncheck3 from "../img/capture/erec/doubloncheck3.png";
+import dateconnexionrecruteur from "../img/capture/erec/dateconnexionrecruteur.png";
+import dateconnexionrecruteur2 from "../img/capture/erec/dateconnexionrecruteur2.png";
+import dateconnexionrecruteur3 from "../img/capture/erec/dateconnexionrecruteur3.png";
+import dateconnexionrecruteur4 from "../img/capture/erec/dateconnexionrecruteur4.png";
+import dateconnexionrecruteur5 from "../img/capture/erec/dateconnexionrecruteur5.png";
+import exportcolonne from "../img/capture/erec/exportcolonne.png";
+import exportcolonne2 from "../img/capture/erec/exportcolonne2.png";
+import exportcolonne3 from "../img/capture/erec/exportcolonne3.png";
+import exportcolonne4 from "../img/capture/erec/exportcolonne4.png";
 function eRec() {
   return (
     <div className="container_components">
@@ -15,9 +27,21 @@ function eRec() {
       <br></br>
       <h3 className="subtitle">Les étapes</h3>
       <p>Pour la réalisation de mes différentes tâches, j’ai commencé par une tâche assez simple : résoudre un problème de doublon de candidats. Il pouvait arriver que deux recruteurs rencontrent en même temps un CV intéressant et qu’ils l’ajoutent dans l’application, ce qui créait un doublon de candidat dans la base de données. Pour résoudre ce problème, il fallait que j’ajoute une fonctionnalité qui vérifiait si le nom et le prénom existaient déjà dans la base de données. En cas de doublon, un message s’affichait pour alerter les recruteurs afin qu’ils puissent vérifier s’il s’agissait du même candidat ou non avant de l’ajouter sur l’application.</p>
+      <img className="erec" src={doubloncheck}></img>
+      <img className="erec" src={doubloncheck2}></img>
+      <img className="erec" src={doubloncheck3}></img>
       <p>Un deuxième ajout que j’ai développé était la dernière date de connexion des recruteurs. Lorsqu’un recruteur quitte Capgemini, celui-ci reste présent dans la base de données, ce qui peut créer à long terme des problèmes de surcharge. J’ai donc ajouté une page dans la partie administrateur pour que les administrateurs puissent supprimer les recruteurs qui ne se sont pas connectés depuis un bon moment.</p>
+      <img className="erec" src={dateconnexionrecruteur}></img>
+      <img className="erec" src={dateconnexionrecruteur2}></img>
+      <img className="erec" src={dateconnexionrecruteur3}></img>
+      <img className="erec" src={dateconnexionrecruteur4}></img>
+      <img className="erec" src={dateconnexionrecruteur5}></img>
       <p>Par la suite, j’ai réalisé la montée de version d’Angular de l’application, de la version 7 à la version 15. Cette mise à jour majeure permettrait d’améliorer l’ensemble du front-end de l’application.</p>
       <p>Ma plus grande fonctionnalité que j’ai pue développer était l’exportation d’une colonne recensant l’ensemble des candidats qui n’ont pas acceptés l’offre d’emploi de Capgemini. Les recruteurs souhaitaient pouvoir exploiter cette colonne qui recensait 11 000 candidats. J’ai utilisé une vue dans la base de données pour optimiser l’exportation : ma première exportation prenait 2 minutes, la seconde 2 millisecondes.</p>
+      <img className="erec" src={exportcolonne}></img>
+      <img className="erec" src={exportcolonne2}></img>
+      <img className="erec" src={exportcolonne3}></img>
+      <img className="erec" src={exportcolonne4}></img>
       <br></br>
       <h3 className="subtitle">Les résultats</h3>
       <h5 className="subtitle">Pour moi</h5>
