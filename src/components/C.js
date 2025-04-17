@@ -21,7 +21,7 @@ function C() {
       <p>Durant cette expérience professionnelle, j’ai pu apprendre et comprendre le code de mieux en mieux jour après jour. Ma progression a été plutôt rapide grâce aux explications de collègues plus expérimentés que moi ainsi qu’aux nombreuses informations disponibles sur internet.</p>
       <p>Avec mon expérience aujourd’hui, je conseillerais aux débutants de bien comprendre l’orientation objet, car c’est l’un des facteurs clés pour progresser par la suite. En effet, cela leur permettra de mieux comprendre d’autres concepts plus avancés.</p>
       <p>Actuellement, je ne travaille pas sur un projet en C#. Néanmoins, j’ai pour objectif de développer mes compétences pour atteindre un niveau avancé. Je souhaite être capable d’être autonome, peu importe le type de projet que je rencontrerai dans mon parcours professionnel, que ce soit une amélioration d’un code existant ou la création d’un projet de A à Z. Mon but est de réaliser des projets avec une structure optimisée et performante afin de créer des applications maintenables et sécurisées.</p>
-      <p>Pour améliorer mes compétences dans ce domaine, je vais réaliser des mini-projets en utilisant C# 12 via le site officiel de Microsoft.</p>
+      <p>Pour améliorer mes compétences dans ce domaine, je vais réaliser des mini-projets en utilisant C# 12 via la documentation du site officiel de Microsoft.</p>
       <br></br>
       <h3>Réalisations associées</h3>
       <div className="realised_container">

@@ -23,7 +23,7 @@ function XML() {
       <p>Dans mon cursus, j’ai pu apprendre les fondamentaux du XML. Cela a développé mes connaissances et m’a permis de maîtriser rapidement les bases à l’aide d’exercices et de projets.</p>
       <p>Avec l’expérience que j’ai aujourd’hui, je conseillerais de commencer par comprendre les bases du XML, le principe des balises personnalisées ainsi que le principe de transfert de données.</p>
       <p>À moyen terme, je ne compte pas réellement développer davantage mes connaissances dans cette compétence. Je préfère me focaliser sur des compétences plus utiles dans mes responsabilités actuelles et futures. J’apprendrai avec l’expérience si un projet me demande de monter en compétence en XML, mais pour le moment, ce n’est pas une priorité.</p>
-      <p>Je ne prévois pas de me former en XML pour le moment, compte tenu du fait que je n’ai pas encore été amené à travailler sur un projet professionnel nécessitant une compétence plus poussée que celle que j’ai actuellement.</p>
+      <p>Je prévois de me former en XML via le site de formation Playwright.</p>
       <br></br>
       <h3>Réalisations associées</h3>
       <div className="realised_container">

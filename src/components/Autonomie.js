@@ -20,6 +20,7 @@ function Autonomie() {
       <p>L’autonomie est l’une des compétences les plus importantes dans mon profil d’expert en ingénierie du logiciel, car elle me permet d’atteindre tous les objectifs d’un projet tout en gérant les imprévus qu’il pourrait engendrer grâce à une bonne anticipation.</p>
       <p>Ma vitesse d'acquisition a été particulièrement rapide lors de mon projet eRec. J'ai dû rapidement intégrer une méthode de travail et de recherche d’informations pour répondre rapidement aux exigences des recruteurs de Capgemini.</p>
       <p>Avec mon expérience actuelle, je conseillerais de commencer par correctement anticiper les tâches en cherchant les ressources dont on aurait besoin selon notre niveau actuel dans une compétence clé durant un projet. Grâce à cela, il devient plus facile d’exécuter les tâches de manière autonome et efficace.</p>
+      <p>Pour améliorer mon autonomie, je vais lire le livre "Oser l’autonomie !" de Jean-Louis Étienne qui parle de manière plus approfondie de l'autonomie.</p>
       <br></br>
       <h3>Réalisations associées</h3>
       <div className="realised_container">
