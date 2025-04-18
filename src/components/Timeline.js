@@ -51,7 +51,7 @@ const formations = [
     date: "2020 - 2022",
     location: "Agen, France",
     diploma: "Bachelor informatique option ingénierie du logiciel",
-    description: "Formation spécialisée en développement full-stack et architecture logicielle.",
+    description: "Fondée en 1958 par Maurice Lafargue, l’ESIEA (École Supérieure d’Informatique, Électronique, Automatique) est une grande école d’ingénieurs spécialisée dans les sciences et technologies du numérique. Implantée sur plusieurs campus en France (Paris/Ivry-sur-Seine, Laval, Agen et Dax), elle forme des ingénieurs généralistes et experts dans des domaines tels que la cybersécurité, l’intelligence artificielle, la data science et les systèmes embarqués. L’ESIEA se distingue par une pédagogie axée sur la pratique, l’innovation et l’engagement sociétal, avec une forte dimension humaine. Elle propose des formations en alternance, des doubles diplômes et des partenariats avec plus de 800 entreprises.​",
     schoolWebsite: "https://www.esiea.fr/",
   },
 ];
